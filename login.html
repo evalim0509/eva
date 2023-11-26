@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+
+   <!-- Font Awesome CDN link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- Custom CSS file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+   
+<div id="header"></div>
+
+<div class="heading">
+   <img src="images/logo.png" alt="ASAP Logo">
+   <p> <a href="home.html">home</a> / login </p>
+</div>
+   
+<div class="form-container">
+
+   <form action="" method="post">
+      <h3>Login Now</h3>
+      <input type="email" name="email" placeholder="Enter your email" required class="box">
+      <input type="password" name="password" placeholder="Enter your password" required class="box">
+      <input type="submit" name="submit" value="Login Now" class="btn">
+      <p>Don't have an account? <a href="register.html">Register Now</a></p>
+   </form>
+
+</div>
+
+<div id="footer"></div>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+</body>
+</html>

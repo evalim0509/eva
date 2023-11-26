@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+   
+<div id="header"></div>
+
+<section class="home">
+
+   <div class="content">
+      <h3>A smart way to grade written responses</h3>
+      <p>Instant feedback, personalized instruction, <br>and better writing outcomes.</p>
+      <a href="about.html" class="white-btn">discover more</a>
+   </div>
+
+</section>
+
+<section class="about">
+
+   <div class="flex">
+
+      <div class="image">
+         <img src="images/about-img.png" alt="">
+      </div>
+
+      <div class="content">
+         <h3>about us</h3>
+         <p>ASAP is a smart and innovative tool that uses the power of machine learning and natural language processing to evaluate essays and short responses in a human-like way. </p>
+         <a href="about.html" class="btn">read more</a>
+      </div>
+
+   </div>
+
+</section>
+
+<section class="home-contact">
+
+   <div class="content">
+      <h3>have any questions?</h3>
+      <p>We are always happy to hear from you and help you in any way we can.</p>
+      <a href="contact.html" class="white-btn">contact us</a>
+   </div>
+
+</section>
+
+<div id="footer"></div>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+</body>
+</html>

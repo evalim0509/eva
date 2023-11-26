@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+
+   <!-- Font Awesome CDN link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- Custom CSS file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+   
+<div id="header"></div>
+
+<div class="heading">
+   <img src="images/logo.png" alt="ASAP Logo">
+   <h3>join us</h3>
+   <p> <a href="home.html">home</a> / register </p>
+</div>
+   
+<div class="form-container">
+
+   <form action="" method="post">
+      <h3>Register Now</h3>
+      <div class="form-row">
+         <div class="form-column">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required class="box">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required class="box">
+            
+            <label for="ph">Phone Number</label>
+            <input type="phone_number" id="ph" name="ph" placeholder="Enter your phone number" required class="box">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required class="box">
+            
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your password" required class="box">
+         </div>
+         <div class="form-column">
+            <label for="user_type">Job Role</label>
+            <select id="user_type" name="user_type" class="box">
+               <option value="administrator">Administrator</option>
+               <option value="instrutor/professor">Instrutor or Professor</option>
+               <option value="instrutorsupport/training">Instrutor Support or Training</option>
+               <option value="student">Student</option>
+               <option value="other">Other</option>
+            </select>
+            
+            <label for="institution_name">Institution Name</label>
+            <input type="text" id="institution_name" name="institution_name" placeholder="Enter your institution name" required class="box">
+            
+            <label for="institution_type">Institution Type</label>
+            <select id="institution_type" name="institution_type" class="box">
+               <option value="higher_education">Higher education</option>
+               <option value="secondary_education">Secondary education</option>
+               <option value="research_publication">Research & publication</option>
+               <option value="other">Other</option>
+            </select>
+            
+            <label for="country">Country</label>
+            <select id="country" name="country" class="box">
+               <option value="china">China</option>
+               <option value="united_states">United States</option>
+               <option value="united_kingdom">United Kingdom</option>
+               <option value="japan">Japan</option>
+               <option value="korea">Korea</option>
+               <option value="malaysia">Malaysia</option>
+               <option value="other">Other</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" name="submit" value="Register Now" class="btn">
+      <p>Already have an account? <a href="login.html">Login Now</a></p>
+   </form>
+
+</div>
+<div id="footer"></div>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+</body>
+</html>
